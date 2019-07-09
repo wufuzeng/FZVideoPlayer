@@ -13,6 +13,7 @@
 #import "FZImage.h"
 #import "FZVideoManager.h"
 #import "FZVideoPlayer.h"
+#import "FZVideoPlayerBundle.h"
 #import "FZVideoPlayItem.h"
 #import "FZVideoLightView.h"
 #import "FZVideoPlayControlView.h"

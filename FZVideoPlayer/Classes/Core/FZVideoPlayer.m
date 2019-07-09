@@ -9,6 +9,7 @@
 
 #import "FZVideoPlayer.h"
 
+#import "FZVideoManager.h"
 @interface FZVideoPlayer ()
 /** 播放管理 */
 @property (nonatomic,strong) FZVideoManager *videoManager;

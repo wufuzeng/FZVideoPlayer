@@ -8,7 +8,7 @@
 
 #import "FZVideoPlayerTitleBar.h"
 
-#import "FZImage.h"
+#import "FZVideoPlayerBundle.h"
 
 @interface FZVideoPlayerTitleBar ()
 
@@ -38,7 +38,7 @@
 -(UIButton *)backButton{
     if (_backButton == nil) {
         _backButton = [[UIButton alloc] init];
-        [_backButton setImage:[FZImage fz_imageNamed:@"left_back_icon_white_60x60"] forState:UIControlStateNormal];
+        [_backButton setImage:[FZVideoPlayerBundle fz_imageNamed:@"left_back_icon_white_60x60"] forState:UIControlStateNormal];
 //        [_backButton addTarget:self action:@selector(backButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_backButton];
         

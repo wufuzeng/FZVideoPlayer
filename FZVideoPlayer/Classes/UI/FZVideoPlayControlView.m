@@ -13,7 +13,7 @@
 #import "FZVideoLightView.h"
 #import "FZVideoVolumeView.h"
 
-#import "FZImage.h"
+#import "FZVideoPlayerBundle.h"
 
 @interface FZVideoPlayControlView ()
 
@@ -570,8 +570,8 @@
  
         
         
-        [_playButton setImage:[FZImage fz_imageNamed:@"btn_video_play_90x90"] forState:UIControlStateNormal];
-        [_playButton setImage:[FZImage fz_imageNamed:@"btn_video_stop_90x90"] forState:UIControlStateSelected];
+        [_playButton setImage:[FZVideoPlayerBundle fz_imageNamed:@"btn_video_play_90x90"] forState:UIControlStateNormal];
+        [_playButton setImage:[FZVideoPlayerBundle fz_imageNamed:@"btn_video_stop_90x90"] forState:UIControlStateSelected];
         
         [_playButton addTarget:self action:@selector(playButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -597,7 +597,7 @@
         [self.contentView addConstraints:@[centerX,centerY,width,height]];
         
         
-        [_retryButton setImage:[FZImage fz_imageNamed:@"btn_play_again_icon_160x80"] forState:UIControlStateNormal];
+        [_retryButton setImage:[FZVideoPlayerBundle fz_imageNamed:@"btn_play_again_icon_160x80"] forState:UIControlStateNormal];
         _retryButton.alpha = 0;
         [_retryButton addTarget:self action:@selector(retryButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     }

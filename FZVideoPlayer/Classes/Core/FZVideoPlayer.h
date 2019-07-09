@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "FZVideoPlayControlView.h"
-#import "FZVideoManager.h"
+
 
 
 NS_ASSUME_NONNULL_BEGIN 

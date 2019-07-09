@@ -8,7 +8,7 @@
 
 #import "FZVideoPlayerToolBar.h"
 
-#import "FZImage.h"
+#import "FZVideoPlayerBundle.h"
 @interface FZVideoPlayerToolBar ()
 
 
@@ -99,7 +99,7 @@
         _playProgress.tintColor = [UIColor whiteColor];
         [_playProgress setMaximumTrackTintColor:[UIColor colorWithWhite:0.5 alpha:0.8]];
         [_playProgress setMinimumTrackTintColor:[UIColor whiteColor]];
-        [_playProgress setThumbImage:[FZImage fz_imageNamed:@"椭圆-1"] forState:UIControlStateNormal];
+        [_playProgress setThumbImage:[FZVideoPlayerBundle fz_imageNamed:@"椭圆-1"] forState:UIControlStateNormal];
         [self addSubview:_playProgress];
         
         _playProgress.translatesAutoresizingMaskIntoConstraints = NO;
@@ -150,8 +150,8 @@
     if (_fullScreenButton == nil) {
         _fullScreenButton = [[UIButton alloc] init];
         
-        [_fullScreenButton setImage:[FZImage fz_imageNamed:@"narrow_btn"] forState:UIControlStateNormal];
-        [_fullScreenButton setImage:[FZImage fz_imageNamed:@"video_amplification"] forState:UIControlStateSelected];
+        [_fullScreenButton setImage:[FZVideoPlayerBundle fz_imageNamed:@"narrow_btn"] forState:UIControlStateNormal];
+        [_fullScreenButton setImage:[FZVideoPlayerBundle fz_imageNamed:@"video_amplification"] forState:UIControlStateSelected];
         //[_fullScreenButton addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fullScreenButtonAction:)]];
         [self addSubview:_fullScreenButton];
         

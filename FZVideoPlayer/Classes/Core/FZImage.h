@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FZImage : UIImage
 
-+(UIImage *)fz_imageNamed:(NSString *)name;
+//+(UIImage *)fz_imageNamed:(NSString *)name;
 
 @end
 
