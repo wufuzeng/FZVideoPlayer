@@ -1,0 +1,6 @@
+framework module Pods_FZVideoPlayer_Example {
+  umbrella header "Pods-FZVideoPlayer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
