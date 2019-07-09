@@ -9,13 +9,36 @@
 
 @implementation FZVideoPlayerBundle
 
++ (UIImage *)zlc_imageNamed:(NSString *)name ofType:(nullable NSString *)type {
+    NSString *mainBundlePath = [NSBundle mainBundle].bundlePath;
+    NSString *bundlePath = [NSString stringWithFormat:@"%@/%@",mainBundlePath,@"ZhuanResourcesBundle.bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    if (bundle == nil) {
+        bundlePath = [NSString stringWithFormat:@"%@/%@",mainBundlePath,@"Frameworks/ZhuanResources.framework/ZhuanResourcesBundle.bundle"];
+        bundle = [NSBundle bundleWithPath:bundlePath];
+    }
+    if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)]) {
+        return [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
+    } else {
+        return [UIImage imageWithContentsOfFile:[bundle pathForResource:name ofType:type]];
+    }
+}
+ 
 + (NSBundle *)fz_bundle{
     static NSBundle *bundle = nil;
     if (bundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
         NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
         NSString *resourcesBundleName = currentBundle.infoDictionary[@"CFBundleName"];
+        NSLog(@"---->1.%@",currentBundle);
+        NSLog(@"---->2.%@",resourcesBundleName);
         bundle = [NSBundle bundleWithPath:[currentBundle pathForResource:resourcesBundleName ofType:@"bundle"]];
+        if (bundle == nil) {
+            NSString *mainBundlePath = [NSBundle mainBundle].bundlePath;
+            NSLog(@"---->3.%@",mainBundlePath);
+            NSString *bundlePath = [NSString stringWithFormat:@"%@/%@",mainBundlePath,@"FZVideoPlayer.bundle"];
+            bundle = [NSBundle bundleWithPath:bundlePath];
+        }
     }
     return bundle;
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FZVideoPlayer'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'A short description of FZVideoPlayer.'
 
 # This description is used to generate tags and improve search results.
