@@ -2,8 +2,16 @@
 # 你刚好需要，我刚好出现，请赏一颗小星星.
 
 <p align="center" >
-<img src="图片路径" title="" float=left width = '200px'>
+
 </p>
+
+<img src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/example87.png" title="" float=left width = '400px'>
+<img src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/example88.png" title="" float=left width = '400px'>
+<video width="320" height="240" controls="controls">
+<source src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/1562660098754630.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 
 <p align="center" >
 <img src= ”图片路径" title="">
