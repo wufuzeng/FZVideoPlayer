@@ -35,9 +35,8 @@
         return [UIImage imageNamed:name inBundle:[self fz_bundle] compatibleWithTraitCollection:nil];
     } else {
         //没有缓存
-        UIImage *image;
+        UIImage *image = [[UIImage imageWithContentsOfFile:[[self fz_bundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:type?:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         if (image) {
-            image = [[UIImage imageWithContentsOfFile:[[self fz_bundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:type?:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             return image;
         }else{
             image = [[UIImage imageWithContentsOfFile:[[self fz_bundle] pathForResource:name ofType:type?:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
