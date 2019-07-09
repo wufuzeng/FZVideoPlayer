@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)fz_imageNamed:(NSString *)name;
 
++ (UIImage *)fz_imageNamed:(NSString *)name ofType:(nullable NSString *)type;
+
 + (NSString *)fz_localizedStringForKey:(NSString *)key;
 
 

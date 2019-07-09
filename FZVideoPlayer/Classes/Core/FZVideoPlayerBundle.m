@@ -8,48 +8,42 @@
 #import "FZVideoPlayerBundle.h"
 
 @implementation FZVideoPlayerBundle
-
-+ (UIImage *)zlc_imageNamed:(NSString *)name ofType:(nullable NSString *)type {
-    NSString *mainBundlePath = [NSBundle mainBundle].bundlePath;
-    NSString *bundlePath = [NSString stringWithFormat:@"%@/%@",mainBundlePath,@"ZhuanResourcesBundle.bundle"];
-    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-    if (bundle == nil) {
-        bundlePath = [NSString stringWithFormat:@"%@/%@",mainBundlePath,@"Frameworks/ZhuanResources.framework/ZhuanResourcesBundle.bundle"];
-        bundle = [NSBundle bundleWithPath:bundlePath];
-    }
-    if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)]) {
-        return [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
-    } else {
-        return [UIImage imageWithContentsOfFile:[bundle pathForResource:name ofType:type]];
-    }
-}
  
 + (NSBundle *)fz_bundle{
     static NSBundle *bundle = nil;
     if (bundle == nil) {
-        // 这里不使用mainBundle是为了适配pod 1.x和0.x
+        //frameworkBundle
         NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-        NSString *resourcesBundleName = currentBundle.infoDictionary[@"CFBundleName"];
-        NSLog(@"---->1.%@",currentBundle);
-        NSLog(@"---->2.%@",resourcesBundleName);
-        bundle = [NSBundle bundleWithPath:[currentBundle pathForResource:resourcesBundleName ofType:@"bundle"]];
+        bundle = [NSBundle bundleWithPath:[currentBundle pathForResource:@"FZVideoPlayer" ofType:@"bundle"]];
         if (bundle == nil) {
-            NSString *mainBundlePath = [NSBundle mainBundle].bundlePath;
-            NSLog(@"---->3.%@",mainBundlePath);
-            NSString *bundlePath = [NSString stringWithFormat:@"%@/%@",mainBundlePath,@"FZVideoPlayer.bundle"];
-            bundle = [NSBundle bundleWithPath:bundlePath];
+            //mainBundle
+            NSBundle *mainBundle = [NSBundle mainBundle];
+            bundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"FZVideoPlayer" ofType:@"bundle"]];
         }
     }
     return bundle;
 }
 
-+ (UIImage *)fz_imageNamed:(NSString *)name{
-    if (name == nil) {
-        return nil;
++ (UIImage *)fz_imageNamed:(NSString *)name {
+    return [self fz_imageNamed:name ofType:nil];
+}
+
++ (UIImage *)fz_imageNamed:(NSString *)name ofType:(nullable NSString *)type {
+    if (name == nil) return nil;
+    if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)]) {
+        //iOS8.0+ 有缓存
+        return [UIImage imageNamed:name inBundle:[self fz_bundle] compatibleWithTraitCollection:nil];
+    } else {
+        //没有缓存
+        UIImage *image;
+        if (image) {
+            image = [[UIImage imageWithContentsOfFile:[[self fz_bundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:type?:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+            return image;
+        }else{
+            image = [[UIImage imageWithContentsOfFile:[[self fz_bundle] pathForResource:name ofType:type?:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+            return image;
+        }
     }
-   UIImage *image = [[UIImage imageWithContentsOfFile:[[self fz_bundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    return image;
 }
 
 + (NSString *)fz_localizedStringForKey:(NSString *)key{
@@ -79,7 +73,6 @@
         } else {
             language = @"en";
         }
-        
         // 从MJRefresh.bundle中查找资源
         bundle = [NSBundle bundleWithPath:[[self fz_bundle] pathForResource:language ofType:@"lproj"]];
     }

@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "FZImage.h"
 #import "FZVideoManager.h"
 #import "FZVideoPlayer.h"
 #import "FZVideoPlayerBundle.h"
