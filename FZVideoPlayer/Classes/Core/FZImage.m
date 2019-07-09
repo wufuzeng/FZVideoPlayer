@@ -17,6 +17,14 @@
     NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
     NSString *resourcesBundleName = currentBundle.infoDictionary[@"CFBundleName"];
     NSString *resourcesBundle = [NSString stringWithFormat:@"%@.bundle",resourcesBundleName];
+    
+    
+    NSString * imagePathFramework = [NSString stringWithFormat:@"%@/%@",resourcesBundle,name];
+    UIImage *imageFramework = [UIImage imageNamed:imagePathFramework];
+    if (imageFramework) {
+        return imageFramework;
+    }
+    
     NSString *(^block)(NSString *fileName) = ^(NSString *fileName){
         return [currentBundle pathForResource:fileName ofType:@".png" inDirectory:resourcesBundle];
     };
