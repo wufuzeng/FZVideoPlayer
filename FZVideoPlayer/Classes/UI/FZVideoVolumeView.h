@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FZVideoVolumeView : UIView
 
+@property (nonatomic,copy) void(^touchActionBlock)(UIGestureRecognizerState state) ;
+
 @end
 
 NS_ASSUME_NONNULL_END

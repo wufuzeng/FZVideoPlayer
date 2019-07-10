@@ -78,7 +78,9 @@
 #pragma mark -- Gesture Func -----
 
 -(void)volumeControlTouch:(UIPanGestureRecognizer *)sender {
-    
+    if (self.touchActionBlock) {
+        self.touchActionBlock(sender.state);
+    }
     switch (sender.state) {
         case UIGestureRecognizerStateBegan:{
             self.valueLabel.alpha = self.progressView.alpha = 1;
@@ -92,7 +94,7 @@
     
     
     CGPoint moviePoint = [sender translationInView:self];
-    float volume = -moviePoint.y/600;
+    float volume = -moviePoint.y/2000;
     volume += [FZVideoVolumeView getSystemVolumValue];
     if (volume >= 1) {
         volume = 1;

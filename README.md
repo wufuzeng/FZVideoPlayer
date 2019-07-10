@@ -5,13 +5,14 @@
 
 </p>
 
-<img src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/example87.png" title="" float=left width = '400px'>
+横屏效果：
+<br />
+<img src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/example87.png" title="" float=left width = '1000px'>
+<br />
+竖屏效果：
+<br />
 <img src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/example88.png" title="" float=left width = '400px'>
-<video width="320" height="240" controls="controls">
-<source src="https://github.com/wufuzeng/FZVideoPlayer/blob/master/Screenshots/1562660098754630.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
+ 
 
 <p align="center" >
 <img src= ”图片路径" title="">
@@ -22,10 +23,15 @@ Your browser does not support the video tag.
 ##  特征
 - [x]  1.  封装源生 AVPlayer 。
 - [x]  2.  支持横竖屏切换。
-- [x]  3. 支持亮度调节。
-- [x]  4. 支持音量调节。
-- [x]  5. 支持进度调节。
+- [x]  3.  支持亮度调节。
+- [x]  4.  支持音量调节。
+- [x]  5.  支持进度调节。
 
+# 0.0.7优化
+- 1.处理调节亮度、音量时控制层消失。
+- 2.优化亮度、音量调剂比例。
+- 3.优化首次播放不显示控制层。
+- 4.处理播放视频没有声音。
 
 [![CI Status](https://img.shields.io/travis/wufuzeng/FZVideoPlayer.svg?style=flat)](https://travis-ci.org/wufuzeng/FZVideoPlayer)
 [![Version](https://img.shields.io/cocoapods/v/FZVideoPlayer.svg?style=flat)](https://cocoapods.org/pods/FZVideoPlayer)

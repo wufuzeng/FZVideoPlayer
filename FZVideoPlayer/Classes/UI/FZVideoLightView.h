@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FZVideoLightView : UIView
 
+@property (nonatomic,copy) void(^touchActionBlock)(UIGestureRecognizerState state) ;
+
 @end
 
 NS_ASSUME_NONNULL_END

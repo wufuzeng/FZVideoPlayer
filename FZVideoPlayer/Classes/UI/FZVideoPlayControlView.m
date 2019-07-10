@@ -323,7 +323,7 @@
         self.toolBar.currentTimeLabel.text = @"00:00";
         self.toolBar.playProgress.value = 0;
         
-        [self showControlViewWithfireTimer:self.autoReplay];
+//        [self showControlViewWithfireTimer:self.autoReplay];
     }
 }
 
@@ -389,6 +389,7 @@
 -(UIView *)contentView{
     if (_contentView == nil) {
         _contentView = [[UIView alloc] init];
+        _contentView.alpha = 0;
         _contentView.clipsToBounds = YES;
         [self addSubview:_contentView];
         _contentView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -456,7 +457,19 @@
 -(FZVideoLightView *)lightControlView{
     if (_lightControlView == nil) {
         _lightControlView = [[FZVideoLightView alloc] init];
-        
+        __weak __typeof(self) weakSelf = self;
+        _lightControlView.touchActionBlock = ^(UIGestureRecognizerState state) {
+            switch (state) {
+                case UIGestureRecognizerStateBegan:{
+                    [weakSelf cancelTimer];
+                    break;}
+                case UIGestureRecognizerStateEnded:{
+                    [weakSelf fireTimer];
+                    break;}
+                default:
+                    break;
+            }
+        };
         [self.contentView addSubview:_lightControlView];
         _lightControlView.translatesAutoresizingMaskIntoConstraints = NO;
         
@@ -497,7 +510,19 @@
     if (_volumeControlView == nil) {
         
         _volumeControlView = [[FZVideoVolumeView alloc] init];
-        
+        __weak __typeof(self) weakSelf = self;
+        _volumeControlView.touchActionBlock = ^(UIGestureRecognizerState state) {
+            switch (state) {
+                case UIGestureRecognizerStateBegan:{
+                    [weakSelf cancelTimer];
+                    break;}
+                case UIGestureRecognizerStateEnded:{
+                    [weakSelf fireTimer];
+                    break;}
+                default:
+                    break;
+            }
+        };
         [self.contentView addSubview:_volumeControlView];
         _volumeControlView.translatesAutoresizingMaskIntoConstraints = NO;
         

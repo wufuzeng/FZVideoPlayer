@@ -46,7 +46,7 @@
         self.player.showBackBtn = NO;
         self.player.autoReplay = YES;
         self.player.disableFullScreen = NO;
-        self.player.videoGravity = AVLayerVideoGravityResizeAspectFill;
+        self.player.videoGravity = AVLayerVideoGravityResizeAspect;
         self.player.showInView = self.view;
     }
     return _player;

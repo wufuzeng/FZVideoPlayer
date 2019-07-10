@@ -34,6 +34,11 @@
         _player = [AVPlayer new];
         _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
         
+        //AVAudioSession是音频会话的一个单例，将指定该APP在与系统之间的通信中如何使用音频。不加没有声音
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord
+                 withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker
+                       error:nil];
+        
         __weak typeof(FZVideoManager *)weakSelf = self;
         //对于1分钟以内的视频就每1/30秒刷新一次页面，大于1分钟的每秒一次就行 (总时间，时间刻度)：每段=总时间/时间刻度
         CMTime interval = self.duration > 60 ? CMTimeMake(1, 1) : CMTimeMake(1, 30);
@@ -42,7 +47,7 @@
                                                                queue:dispatch_get_main_queue()
                                                           usingBlock:^(CMTime time) {
                                                               
-          if ( CMTimeGetSeconds(time) >= weakSelf.totalSecond) {
+          if (CMTimeGetSeconds(time) >= weakSelf.totalSecond) {
               weakSelf.playerStatus = VideoPlayerStatusFinished;
               if ([weakSelf.delegate respondsToSelector:@selector(manager:playerStatusChanged:)]) {
                   [weakSelf.delegate manager:weakSelf playerStatusChanged:weakSelf.playerStatus];

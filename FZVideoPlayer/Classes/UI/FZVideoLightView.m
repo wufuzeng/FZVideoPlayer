@@ -41,7 +41,9 @@
 #pragma mark -- Gesture Func -----
 
 -(void)lightControlTouch:(UIPanGestureRecognizer *)sender{
-    
+    if (self.touchActionBlock) {
+        self.touchActionBlock(sender.state);
+    }
     switch (sender.state) {
         case UIGestureRecognizerStateBegan:{
             self.valueLabel.alpha = self.progressView.alpha = 1;
@@ -54,7 +56,7 @@
     }
     
     CGPoint moviePoint = [sender translationInView:self];
-    float screenBrightNess = -moviePoint.y/600;
+    float screenBrightNess = -moviePoint.y/2000;
     screenBrightNess += [FZVideoLightView getScreenBrightness];
     if (screenBrightNess >= 1) {
         screenBrightNess = 1;
