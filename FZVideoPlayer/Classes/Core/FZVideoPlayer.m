@@ -61,7 +61,7 @@
     UIDevice *device = [UIDevice currentDevice];
     
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (device.orientation == UIDeviceOrientationPortrait ||
             device.orientation == UIDeviceOrientationPortraitUpsideDown) {
             //竖屏
@@ -220,12 +220,14 @@
                 self.transform = CGAffineTransformMakeRotation(180/180.0 * M_PI);
             }
             self.frame = self.originRect;
+            [self removeFromSuperview];
             [self.showInView addSubview:self];
         }];
     } else if (orientation == UIDeviceOrientationLandscapeLeft ||
                orientation == UIDeviceOrientationLandscapeRight) {
         //打开系统的状态条
         [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelStatusBar];
+        [self removeFromSuperview];
         [[UIApplication sharedApplication].keyWindow addSubview:self];
         [[UIApplication sharedApplication].keyWindow bringSubviewToFront:self];
         [UIView animateWithDuration:0.3 animations:^{
