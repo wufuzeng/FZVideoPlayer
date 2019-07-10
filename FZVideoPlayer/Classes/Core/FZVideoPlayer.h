@@ -54,7 +54,7 @@ FZPlayManagerDelegate
 @property (nonatomic,weak) id<FZPlayerDelegate> delegate;
 
 /** 要显示的view (nil 则是显示在window上) */
-@property (nonatomic,strong) UIView *showInView;
+@property (nonatomic,weak) UIView *showInView;
 /** 视频拉伸模式 */
 @property (nonatomic,assign) AVLayerVideoGravity videoGravity;
 /** 播放视频的标题 */

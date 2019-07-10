@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FZVideoPlayer'
-  s.version          = '0.0.9'
+  s.version          = '0.0.10'
   s.summary          = 'A short description of FZVideoPlayer.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,7 @@ TODO: Add long description of the pod here.
     'FZVideoPlayer' => ['FZVideoPlayer/Assets/*.png']
   }
 
+  s.requires_arc =  true
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.frameworks = "Foundation", "UIKit"

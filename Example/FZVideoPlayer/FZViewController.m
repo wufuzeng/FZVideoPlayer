@@ -24,6 +24,16 @@
     [self.player playWithUrl:url];
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+    [self.player stop];
+}
+
+-(void)dealloc{
+    NSLog(@"%@释放了",NSStringFromClass([self class]));
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self.player play];

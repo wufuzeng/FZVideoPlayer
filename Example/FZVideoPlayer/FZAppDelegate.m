@@ -8,11 +8,19 @@
 
 #import "FZAppDelegate.h"
 
+#import "FZFirstViewController.h"
+
 @implementation FZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:[FZFirstViewController new]];
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = nc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

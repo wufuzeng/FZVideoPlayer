@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6019C19422D32DB100DCBE77 /* Test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6019C19322D32DB100DCBE77 /* Test.mov */; };
+		60373C6522D5D2FB00B5F6FC /* FZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60373C6422D5D2FB00B5F6FC /* FZFirstViewController.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D8FB6FFDA062CA724C9B4B63 /* Pods_FZVideoPlayer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E06C6A848F8F59054F730C /* Pods_FZVideoPlayer_Example.framework */; };
@@ -59,6 +60,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		6019C19322D32DB100DCBE77 /* Test.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Test.mov; sourceTree = "<group>"; };
+		60373C6322D5D2FB00B5F6FC /* FZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZFirstViewController.h; sourceTree = "<group>"; };
+		60373C6422D5D2FB00B5F6FC /* FZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZFirstViewController.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72AA0201DE1F8E6537FEF977 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				6003F59C195388D20070C39A /* FZAppDelegate.h */,
 				6003F59D195388D20070C39A /* FZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				60373C6322D5D2FB00B5F6FC /* FZFirstViewController.h */,
+				60373C6422D5D2FB00B5F6FC /* FZFirstViewController.m */,
 				6003F5A5195388D20070C39A /* FZViewController.h */,
 				6003F5A6195388D20070C39A /* FZViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -372,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* FZAppDelegate.m in Sources */,
+				60373C6522D5D2FB00B5F6FC /* FZFirstViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* FZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
