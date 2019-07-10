@@ -35,6 +35,11 @@
     return self;
 }
 
+-(void)dealloc{
+    
+    NSLog(@"%@释放了",NSStringFromClass([self class]));
+    [self removeObserver];
+}
 
 #pragma mark -- SetupViews Func -----
 /** 配置视图 */
@@ -57,6 +62,9 @@
                                                object:nil];
 }
 
+-(void)removeObserver{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+}
 - (void) handleDeviceOrientationDidChange:(NSNotification *)notifi {
     UIDevice *device = [UIDevice currentDevice];
     
