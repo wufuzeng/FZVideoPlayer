@@ -336,7 +336,7 @@
         }
     }
     if (_playerStyle == VideoPlayerStyleFullScreenLeft ||
-        _playerStyle ==  VideoPlayerStyleFullScreenRight) {
+        _playerStyle == VideoPlayerStyleFullScreenRight) {
         self.toolBar.fullScreenButton.selected = NO;
         self.titleBar.backButton.alpha = 1;
         self.layoutTitleBarTop.constant = 0;
@@ -386,7 +386,6 @@
         self.titleBar.backButton.alpha = 0;
     }
 }
-
  
 
 #pragma mark -- Lazy Func -------

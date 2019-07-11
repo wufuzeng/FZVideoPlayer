@@ -221,7 +221,7 @@
         //隐藏系统状态栏
         [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelNormal];
 //        [self removeFromSuperview];
-        [self.showInView addSubview:self];
+        
         [UIView animateWithDuration:0.3 animations:^{
             //更新并旋转主界面
             if (orientation == UIDeviceOrientationPortrait) {
@@ -230,14 +230,19 @@
                 self.transform = CGAffineTransformMakeRotation(180/180.0 * M_PI);
             }
             self.frame = self.originRect;
+        } completion:^(BOOL finished) {
+            if (self.showInView) {
+                [self.showInView addSubview:self];
+            }else{
+                NSLog(@"------->: self.showInview is nil");
+            }
+            
         }];
     } else if (orientation == UIDeviceOrientationLandscapeLeft ||
                orientation == UIDeviceOrientationLandscapeRight) {
         //打开系统的状态条
         [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelStatusBar];
-//        [self removeFromSuperview];
-        [[UIApplication sharedApplication].keyWindow addSubview:self];
-        [[UIApplication sharedApplication].keyWindow bringSubviewToFront:self];
+       
         [UIView animateWithDuration:0.3 animations:^{
             //更新并旋转主界面
             if (orientation == UIDeviceOrientationLandscapeLeft) {
@@ -248,6 +253,9 @@
             self.frame  = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
             self.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
             self.layer.cornerRadius = 0;
+        } completion:^(BOOL finished) {
+            [[UIApplication sharedApplication].keyWindow addSubview:self];
+            [[UIApplication sharedApplication].keyWindow bringSubviewToFront:self];
         }];
     }
 }
