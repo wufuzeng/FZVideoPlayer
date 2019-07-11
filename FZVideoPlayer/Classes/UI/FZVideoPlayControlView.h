@@ -51,6 +51,8 @@ typedef NS_ENUM(NSInteger,VideoPlayerStyle) {
 @property (nonatomic,assign) BOOL showBackBtn;
 /** 禁止全屏 */
 @property (nonatomic,assign) BOOL disableFullScreen;
+/** 禁止调节亮度,音量 */
+@property (nonatomic,assign) BOOL disableAdjustBrightnessOrVolume;
 
 @property (nonatomic,assign) VideoPlayerStatus playerStatus;
 @property (nonatomic,assign) VideoPlayerStyle  playerStyle;

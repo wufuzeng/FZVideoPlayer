@@ -69,6 +69,8 @@ FZPlayManagerDelegate
 @property (nonatomic,assign) BOOL showBackBtn;
 /** 禁止全屏 */
 @property (nonatomic,assign) BOOL disableFullScreen;
+/** 禁止调节亮度,音量 */
+@property (nonatomic,assign) BOOL disableAdjustBrightnessOrVolume;
 
 /**
  播放url地址

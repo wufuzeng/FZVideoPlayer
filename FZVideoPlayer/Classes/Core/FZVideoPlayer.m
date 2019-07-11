@@ -220,6 +220,8 @@
         orientation == UIDeviceOrientationPortraitUpsideDown) {
         //隐藏系统状态栏
         [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelNormal];
+//        [self removeFromSuperview];
+        [self.showInView addSubview:self];
         [UIView animateWithDuration:0.3 animations:^{
             //更新并旋转主界面
             if (orientation == UIDeviceOrientationPortrait) {
@@ -228,14 +230,12 @@
                 self.transform = CGAffineTransformMakeRotation(180/180.0 * M_PI);
             }
             self.frame = self.originRect;
-            [self removeFromSuperview];
-            [self.showInView addSubview:self];
         }];
     } else if (orientation == UIDeviceOrientationLandscapeLeft ||
                orientation == UIDeviceOrientationLandscapeRight) {
         //打开系统的状态条
         [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelStatusBar];
-        [self removeFromSuperview];
+//        [self removeFromSuperview];
         [[UIApplication sharedApplication].keyWindow addSubview:self];
         [[UIApplication sharedApplication].keyWindow bringSubviewToFront:self];
         [UIView animateWithDuration:0.3 animations:^{
@@ -273,9 +273,14 @@
     self.controlView.showBackBtn = showBackBtn;
 }
 
-- (void)setDisableFullScreen:(BOOL)disableFullScreen{
+-(void)setDisableFullScreen:(BOOL)disableFullScreen{
     _disableFullScreen = disableFullScreen;
     self.controlView.disableFullScreen = disableFullScreen;
+}
+
+-(void)setDisableAdjustBrightnessOrVolume:(BOOL)disableAdjustBrightnessOrVolume{
+    _disableAdjustBrightnessOrVolume = disableAdjustBrightnessOrVolume;
+    self.controlView.disableAdjustBrightnessOrVolume = disableAdjustBrightnessOrVolume;
 }
 
 -(void)setShowInView:(UIView *)showInView {

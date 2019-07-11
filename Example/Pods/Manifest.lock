@@ -1,5 +1,5 @@
 PODS:
-  - FZVideoPlayer (0.0.9)
+  - FZVideoPlayer (0.0.10)
 
 DEPENDENCIES:
   - FZVideoPlayer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZVideoPlayer: 190d0e0fdd1cd801936e1f7ba2f60ae6eaf6a62d
+  FZVideoPlayer: 331ae70e0de8b94c6a872246f15776d23d060962
 
 PODFILE CHECKSUM: a9914c6ba836748be2f1fc78ab8ba777221d4fc9
 

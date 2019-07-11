@@ -374,6 +374,11 @@
     }
 }
 
+-(void)setDisableAdjustBrightnessOrVolume:(BOOL)disableAdjustBrightnessOrVolume{
+    _disableAdjustBrightnessOrVolume = disableAdjustBrightnessOrVolume;
+    self.lightControlView.userInteractionEnabled = !disableAdjustBrightnessOrVolume;
+    self.volumeControlView.userInteractionEnabled = !disableAdjustBrightnessOrVolume;
+}
 
 - (void)setShowBackBtn:(BOOL)showBackBtn {
     _showBackBtn = showBackBtn;
