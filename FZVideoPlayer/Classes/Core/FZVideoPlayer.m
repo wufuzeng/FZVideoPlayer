@@ -236,17 +236,19 @@
             self.frame = self.originRect;
         } completion:^(BOOL finished) {
             if (self.showInView) {
-                [self.superview willRemoveSubview:self];
                 [self removeFromSuperview];
-                [self willMoveToSuperview:self.showInView];
                 [self.showInView addSubview:self];
-                [self didMoveToSuperview];
             }else{
                 NSLog(@"------->: self.showInview is nil");
             }
             
-            if ([[UIApplication sharedApplication].delegate.window viewWithTag:tag]) {
+            UIWindow *window = [UIApplication sharedApplication].delegate.window;
+            
+            if ([window viewWithTag:tag]) {
                 NSLog(@"--->self is retain by window");
+                for (UIView *obj in window.subviews) {
+                    [obj removeFromSuperview];
+                }
             }
             
         }];
@@ -268,10 +270,8 @@
         } completion:^(BOOL finished) {
             UIWindow *window = [UIApplication sharedApplication].delegate.window;
             
-            [self.superview willRemoveSubview:self];
-            [self willMoveToWindow:window];
+            [self removeFromSuperview];
             [window addSubview:self];
-            [self didMoveToWindow];
             [window bringSubviewToFront:self];
             
             if ([self.showInView viewWithTag:tag]) {
