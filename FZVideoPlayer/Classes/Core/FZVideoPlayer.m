@@ -236,7 +236,11 @@
             self.frame = self.originRect;
         } completion:^(BOOL finished) {
             if (self.showInView) {
+                [self.superview willRemoveSubview:self];
+                [self removeFromSuperview];
+                [self willMoveToSuperview:self.showInView];
                 [self.showInView addSubview:self];
+                [self didMoveToSuperview];
             }else{
                 NSLog(@"------->: self.showInview is nil");
             }
@@ -262,9 +266,13 @@
             self.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
             self.layer.cornerRadius = 0;
         } completion:^(BOOL finished) {
-            [[UIApplication sharedApplication].delegate.window addSubview:self];
-            [[UIApplication sharedApplication].delegate.window bringSubviewToFront:self];
+            UIWindow *window = [UIApplication sharedApplication].delegate.window;
             
+            [self.superview willRemoveSubview:self];
+            [self willMoveToWindow:window];
+            [window addSubview:self];
+            [self didMoveToWindow];
+            [window bringSubviewToFront:self];
             
             if ([self.showInView viewWithTag:tag]) {
                 NSLog(@"--->self is retain by self.showInView");
