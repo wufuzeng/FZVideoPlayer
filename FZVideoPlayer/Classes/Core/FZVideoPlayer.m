@@ -246,9 +246,7 @@
             
             if ([window viewWithTag:tag]) {
                 NSLog(@"--->self is retain by window");
-                for (UIView *obj in window.subviews) {
-                    [obj removeFromSuperview];
-                }
+                [[window viewWithTag:tag] removeFromSuperview];
             }
             
         }];
