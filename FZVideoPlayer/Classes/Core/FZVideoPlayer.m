@@ -213,19 +213,14 @@
  旋转播放视图
  */
 -(void)rotateView:(UIDeviceOrientation)orientation {
-    
-    NSInteger tag = 99999999;
-    
-    self.tag = tag;
-    
+ 
     [self bringSubviewToFront:self.controlView];
     
     if (orientation == UIDeviceOrientationPortrait ||
         orientation == UIDeviceOrientationPortraitUpsideDown) {
         //隐藏系统状态栏
         [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelNormal];
-//        [self removeFromSuperview];
-        
+ 
         [UIView animateWithDuration:0.3 animations:^{
             //更新并旋转主界面
             if (orientation == UIDeviceOrientationPortrait) {
@@ -235,20 +230,8 @@
             }
             self.frame = self.originRect;
         } completion:^(BOOL finished) {
-            if (self.showInView) {
-                [self removeFromSuperview];
-                [self.showInView addSubview:self];
-            }else{
-                NSLog(@"------->: self.showInview is nil");
-            }
-            
-            UIWindow *window = [UIApplication sharedApplication].delegate.window;
-            
-            if ([window viewWithTag:tag]) {
-                NSLog(@"--->self is retain by window");
-                [[window viewWithTag:tag] removeFromSuperview];
-            }
-            
+            [self.showInView addSubview:self];
+            [self.showInView bringSubviewToFront:self];
         }];
     } else if (orientation == UIDeviceOrientationLandscapeLeft ||
                orientation == UIDeviceOrientationLandscapeRight) {
@@ -267,14 +250,8 @@
             self.layer.cornerRadius = 0;
         } completion:^(BOOL finished) {
             UIWindow *window = [UIApplication sharedApplication].delegate.window;
-            
-            [self removeFromSuperview];
             [window addSubview:self];
             [window bringSubviewToFront:self];
-            
-            if ([self.showInView viewWithTag:tag]) {
-                NSLog(@"--->self is retain by self.showInView");
-            }
         }];
     }
 }
