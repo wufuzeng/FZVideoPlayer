@@ -214,6 +214,10 @@
  */
 -(void)rotateView:(UIDeviceOrientation)orientation {
     
+    NSInteger tag = 99999999;
+    
+    self.tag = tag;
+    
     [self bringSubviewToFront:self.controlView];
     
     if (orientation == UIDeviceOrientationPortrait ||
@@ -237,6 +241,10 @@
                 NSLog(@"------->: self.showInview is nil");
             }
             
+            if ([[UIApplication sharedApplication].delegate.window viewWithTag:tag]) {
+                NSLog(@"--->self is retain by window");
+            }
+            
         }];
     } else if (orientation == UIDeviceOrientationLandscapeLeft ||
                orientation == UIDeviceOrientationLandscapeRight) {
@@ -254,8 +262,13 @@
             self.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
             self.layer.cornerRadius = 0;
         } completion:^(BOOL finished) {
-            [[UIApplication sharedApplication].keyWindow addSubview:self];
-            [[UIApplication sharedApplication].keyWindow bringSubviewToFront:self];
+            [[UIApplication sharedApplication].delegate.window addSubview:self];
+            [[UIApplication sharedApplication].delegate.window bringSubviewToFront:self];
+            
+            
+            if ([self.showInView viewWithTag:tag]) {
+                NSLog(@"--->self is retain by self.showInView");
+            }
         }];
     }
 }
