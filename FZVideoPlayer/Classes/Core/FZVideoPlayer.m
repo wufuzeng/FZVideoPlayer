@@ -68,29 +68,24 @@
 - (void) handleDeviceOrientationDidChange:(NSNotification *)notifi {
     UIDevice *device = [UIDevice currentDevice];
     
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (device.orientation == UIDeviceOrientationPortrait ||
-            device.orientation == UIDeviceOrientationPortraitUpsideDown) {
-            //竖屏
-            self.controlView.playerStyle = VideoPlayerStyleNormal;
+    if (device.orientation == UIDeviceOrientationPortrait ||
+        device.orientation == UIDeviceOrientationPortraitUpsideDown) {
+        //竖屏
+        self.controlView.playerStyle = VideoPlayerStyleNormal;
+        [self rotateView:device.orientation];
+        
+    } else if (device.orientation == UIDeviceOrientationLandscapeLeft ||
+               device.orientation == UIDeviceOrientationLandscapeRight) {
+        if (self.disableFullScreen) {
             
-        } else if (device.orientation == UIDeviceOrientationLandscapeLeft) {
-            if (self.disableFullScreen) {
-                
-            }else{
-                self.controlView.playerStyle = VideoPlayerStyleFullScreenLeft;
-            }
-        } else if (device.orientation == UIDeviceOrientationLandscapeRight) {
-            if (self.disableFullScreen) {
-                
-            }else{
-                self.controlView.playerStyle = VideoPlayerStyleFullScreenRight;
-            }
-        } else{
-            // 不处理
+        }else{
+            self.controlView.playerStyle = VideoPlayerStyleFullScreen;
+            [self rotateView:device.orientation];
         }
-    });
+    } else{
+        // 不处理
+    }
+    
 }
 
 #pragma mark -- Play Func -------------
@@ -132,12 +127,11 @@
 }
 
 - (void)control:(FZVideoPlayControlView *)control playerStyleChanged:(VideoPlayerStyle)playerStyle{
-    if (playerStyle == VideoPlayerStyleFullScreenLeft) {
-        [self rotateView:UIDeviceOrientationLandscapeLeft];
-    } else if (playerStyle == VideoPlayerStyleFullScreenRight) {
-        [self rotateView:UIDeviceOrientationLandscapeRight];
+    if (playerStyle == VideoPlayerStyleFullScreen) {
+        [self zoomView:VideoPlayerStyleFullScreen];
     } else {
-        [self rotateView:UIDeviceOrientationPortrait];
+        [self zoomView:VideoPlayerStyleNormal];
+        
     }
     
     //传递视图状态的改变
@@ -206,65 +200,102 @@
 }
 
 
-
-#pragma mark -- Rotation Func ----
-
-/**
- 旋转播放视图
- */
--(void)rotateView:(UIDeviceOrientation)orientation {
- 
-    [self bringSubviewToFront:self.controlView];
+-(void)zoomView:(VideoPlayerStyle)style {
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     
-    if (orientation == UIDeviceOrientationPortrait ||
-        orientation == UIDeviceOrientationPortraitUpsideDown) {
-        //隐藏系统状态栏
-        [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelNormal];
- 
+    if (style == VideoPlayerStyleNormal) {
         [UIView animateWithDuration:0.3 animations:^{
-            //更新并旋转主界面
-            if (orientation == UIDeviceOrientationPortrait) {
-                self.transform = CGAffineTransformMakeRotation(0/180.0 * M_PI);
-            }else{
-                self.transform = CGAffineTransformMakeRotation(180/180.0 * M_PI);
-            }
-            self.frame = self.originRect;
+            self.transform = CGAffineTransformIdentity;
+            [self switchFrame:self.originRect];
         } completion:^(BOOL finished) {
+            [window setWindowLevel:UIWindowLevelNormal];
             [self.showInView addSubview:self];
             [self.showInView bringSubviewToFront:self];
         }];
-    } else if (orientation == UIDeviceOrientationLandscapeLeft ||
-               orientation == UIDeviceOrientationLandscapeRight) {
-        //打开系统的状态条
-        [[[UIApplication sharedApplication] keyWindow] setWindowLevel:UIWindowLevelStatusBar];
-       
+    }else{
         [UIView animateWithDuration:0.3 animations:^{
-            //更新并旋转主界面
-            if (orientation == UIDeviceOrientationLandscapeLeft) {
-                self.transform = CGAffineTransformMakeRotation(90/180.0 * M_PI);
-            }else{
-                self.transform = CGAffineTransformMakeRotation(270/180.0 * M_PI);
-            }
-            self.frame  = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-            self.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
+            CGRect fullRect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+            [self switchFrame:fullRect];
             self.layer.cornerRadius = 0;
         } completion:^(BOOL finished) {
-            UIWindow *window = [UIApplication sharedApplication].delegate.window;
+            [window setWindowLevel:UIWindowLevelStatusBar];
             [window addSubview:self];
             [window bringSubviewToFront:self];
         }];
     }
 }
 
+
+#pragma mark -- Rotation Func ----
+
+
+/**
+ 旋转播放视图
+ */
+-(void)rotateView:(UIDeviceOrientation)orientation {
+    
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    CGRect fullRect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    
+    if (orientation == UIDeviceOrientationPortrait ||
+        orientation == UIDeviceOrientationPortraitUpsideDown) {
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            if (orientation == UIDeviceOrientationPortrait) {
+                self.transform = CGAffineTransformIdentity;//CGAffineTransformMakeRotation(0/180.0 * M_PI);
+            }else{
+                self.transform = CGAffineTransformMakeRotation(180/180.0 * M_PI);
+            }
+            if (self.controlView.playerStyle == VideoPlayerStyleNormal) {
+                [self switchFrame:self.originRect];
+            }else{
+                [self switchFrame:fullRect];
+            }
+        } completion:^(BOOL finished) {
+            if (self.controlView.playerStyle == VideoPlayerStyleNormal) {
+                [window setWindowLevel:UIWindowLevelNormal];
+                [self.showInView addSubview:self];
+                [self.showInView bringSubviewToFront:self];
+            }else{
+                [window setWindowLevel:UIWindowLevelStatusBar];
+                [window addSubview:self];
+                [window bringSubviewToFront:self];
+            }
+        }];
+        
+    } else if (orientation == UIDeviceOrientationLandscapeLeft ||
+               orientation == UIDeviceOrientationLandscapeRight) {
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            if (orientation == UIDeviceOrientationLandscapeLeft) {
+                self.transform = CGAffineTransformMakeRotation(90/180.0 * M_PI);
+            }else{
+                self.transform = CGAffineTransformMakeRotation(270/180.0 * M_PI);
+            }
+            [self switchFrame:fullRect];
+            self.layer.cornerRadius = 0;
+        } completion:^(BOOL finished) {
+            [window setWindowLevel:UIWindowLevelStatusBar];
+            [window addSubview:self];
+            [window bringSubviewToFront:self];
+        }];
+    }
+} 
+
 #pragma mark -- Set Func -----
 
 -(void)setFrame:(CGRect)frame {
+    self.originRect = frame;
+    [self switchFrame:frame];
+}
+-(void)switchFrame:(CGRect)frame{
     [super setFrame:frame];
     CGRect nRect = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
     self.videoManager.playerLayer.frame = nRect;
     self.controlView.frame = nRect;
     [self.controlView layoutIfNeeded];
 }
+
 
 
 -(void)setTitle:(NSString *)title {

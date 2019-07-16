@@ -99,7 +99,7 @@
         _playProgress.tintColor = [UIColor whiteColor];
         [_playProgress setMaximumTrackTintColor:[UIColor colorWithWhite:0.5 alpha:0.8]];
         [_playProgress setMinimumTrackTintColor:[UIColor whiteColor]];
-        [_playProgress setThumbImage:[FZVideoPlayerBundle fz_imageNamed:@"椭圆-1"] forState:UIControlStateNormal];
+        [_playProgress setThumbImage:[FZVideoPlayerBundle fz_imageNamed:@"icon_dot"] forState:UIControlStateNormal];
         [self addSubview:_playProgress];
         
         _playProgress.translatesAutoresizingMaskIntoConstraints = NO;

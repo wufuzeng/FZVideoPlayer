@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger,VideoPlayerStyle) {
     VideoPlayerStyleNormal = 0,//正常
-    VideoPlayerStyleFullScreenLeft,//全屏
-    VideoPlayerStyleFullScreenRight,//全屏
+    VideoPlayerStyleFullScreen,//全屏
+//    VideoPlayerStyleFullScreenLeft,//全屏
+//    VideoPlayerStyleFullScreenRight,//全屏
 };
 
 @class FZVideoPlayControlView;

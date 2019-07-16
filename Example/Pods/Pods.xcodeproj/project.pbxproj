@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05619681A5AD4C5E31E036573BBFB9C4 /* btn_video_play_90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 107C32C47B1B638B8B269C61E0D569EC /* btn_video_play_90x90@2x.png */; };
 		098A5B052D332B96E7344A78531AA4E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		0B6D1AEC730B43676312D3C047AAE94D /* btn_video_stop_90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1B3FB49D367EECDF7C0679C4509552 /* btn_video_stop_90x90@2x.png */; };
 		11A059AC2A447C0878D00F998E1678DB /* FZVideoLightView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCC940F3FE93608534665FB23197CA6 /* FZVideoLightView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		182CC90B2F97FFD11BF763B60023F791 /* FZVideoPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1C6B0457CB729BC84068229D12AD97 /* FZVideoPlayer-dummy.m */; };
-		204FF30660316526C8A9F42EE9353001 /* 椭圆-1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD673AB224C248D5E2DC975DAD6C587 /* 椭圆-1@3x.png */; };
 		2130CF20F2361098FD3D95C09526EE09 /* FZVideoPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFE9D070C84B0A5B7384E7BA02537B0 /* FZVideoPlayControlView.m */; };
 		227CAE1F50CE27ECB28832A8D805796F /* FZVideoPlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D50F97D668FFA08BBE3045A689C573 /* FZVideoPlayItem.m */; };
 		23B63683E03635995F08936A53A8CACD /* FZVideoPlayerToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4725411C9FF89CB8F2F586CBD7BD67 /* FZVideoPlayerToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2637829CE85F3DCA45B7F37845508359 /* btn_play_again_icon_160x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7F3EA01FF53D38F16E4D6D37049AA30 /* btn_play_again_icon_160x80@2x.png */; };
-		2E0CC524CB85CB629A67178A1A798230 /* btn_video_stop_90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CFD7611C7810F28028151DA97635EA6 /* btn_video_stop_90x90@2x.png */; };
 		2E1E45D6941C8B98518963226D831C2C /* FZVideoPlayerBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BF088B5E923D58B74881A52EA0A0B /* FZVideoPlayerBundle.m */; };
-		2F329A572EDE44071FF420046AAC1F58 /* narrow_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15E6F3C479269F514A20C35EF6742A2E /* narrow_btn@3x.png */; };
 		329EEA398DB5C20DAC33055DDD028BD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		3D23E9CAFAD0F9A32D18D1B69FBB3177 /* Pods-FZVideoPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBDC0EB888AE8FDED19971A9D45E590 /* Pods-FZVideoPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E406F6AF9D2C6F79B8AFEDE1CA6C643 /* FZVideoPlayerBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = A2337642232940F46F6B352627628580 /* FZVideoPlayerBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42E40625003C7A45E67BAE47A98AE2AC /* icon_dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49055BF14F17ADEB23476033148A4879 /* icon_dot@2x.png */; };
 		488DB3008FAA7F9EF3D9EAC67A1B4871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		4BAF19DB4C7A916AF01C3C10E798D9BB /* FZVideoLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C01B26C6D0E674D1C2953B0EF4468 /* FZVideoLightView.m */; };
 		50812D4AC443CF20CB2A9734CDDD6D86 /* Pods-FZVideoPlayer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6AE414B740F51BF578D4D9C9B5B6EF /* Pods-FZVideoPlayer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53C19D7D486FE631FC8213F468B46B14 /* 椭圆-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9750814AF1B57891F24AF1C6E5026265 /* 椭圆-1@2x.png */; };
+		54BA8223E17757EEF908FAFFD54FBA11 /* icon_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 34218B67417050F5E95F47549B74C020 /* icon_dot.png */; };
 		56685064A8BBF6BD65935995C0F2F0A8 /* Pods-FZVideoPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98CB2B62721013AAB5C3A51BFA72B3 /* Pods-FZVideoPlayer_Example-dummy.m */; };
 		5B837F770A519A06AF1944DEC2070B21 /* FZVideoVolumeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F552AD44321D0BBD4E5EF61E5CD60E0 /* FZVideoVolumeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FEC531613717E02C399A56F4CAEC2B3 /* btn_play_again_icon_160x80@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B79234079B7CA80CAAC1BF7C9EACA51 /* btn_play_again_icon_160x80@3x.png */; };
 		68585ADC32E2D4DF2A8D0DA16E54213B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		69021A240EACB7F6026A442B1BC98860 /* narrow_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0480ED9CAED762B60E879017FC97AC2C /* narrow_btn@2x.png */; };
-		6A5D70853FEC110975FAA54793F68CEF /* video_amplification@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEE2CF484401D29BAF456BD6C1FCC943 /* video_amplification@3x.png */; };
-		6ABEC1604E9297F84A86109FABA79124 /* left_back_icon_white_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE4640B21A4ED67C088B218D9AE20A /* left_back_icon_white_60x60.png */; };
-		6AE8332BE237F8A344AA1AFEAC239382 /* left_back_icon_white_60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0309B5E916AD67F9180C76D2F4B2BB1 /* left_back_icon_white_60x60@3x.png */; };
-		6B4F9CC1F4C0F6F6F7FB36082E69E1A8 /* left_back_icon_white_60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4362E8D06A615671E10036B71C7395A8 /* left_back_icon_white_60x60@2x.png */; };
+		687F307AF62659FFD9780FE55162EB30 /* left_back_icon_white_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6886E96B26C5162F090D8029127F6028 /* left_back_icon_white_60x60.png */; };
+		7286414867D5776E3EA918B4903E4153 /* narrow_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 898512D9272CBB6F83A44F50433396E9 /* narrow_btn@2x.png */; };
 		733EEE7F1931593C5B86248982FEBEEE /* FZVideoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EF32EFD963D82DB8A96C3BD6040E56A /* FZVideoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A92DBBB21FC632C64E7328186E4BB38 /* left_back_icon_white_60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18AD7B96484004C6DD1E2D2AFB4F25E /* left_back_icon_white_60x60@3x.png */; };
 		7BAE5074F6D8CA35702DFEFF2F45D4CC /* FZVideoPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F5CABADE3763C7EE50A871076D1265 /* FZVideoPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803D2BDA20122BC1943EC198F4001F0F /* btn_video_play_90x90test.png in Resources */ = {isa = PBXBuildFile; fileRef = 87360AFE786A759C2770350C121227BF /* btn_video_play_90x90test.png */; };
 		8132A932CA7E49608797D2CE16857513 /* FZVideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 10FF1D36CE2452A445E4A3E3465EA1B2 /* FZVideoPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89F8EC7E9CCBCF70BDAEC96E3FA7FBCC /* narrow_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C450B4C3BFC838EBE6DCD1BAF5D2DF /* narrow_btn.png */; };
 		8BEEF58E55AF6A78AFA05448BBE2BBDE /* FZVideoPlayControlView.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FD359A68C7ED29F5AA9C46AB77661C /* FZVideoPlayControlView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C51601C47C581FE89BC7332CACD0AB8 /* Pods-FZVideoPlayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC120D3A0EB890A4553A88FCD3493CCB /* Pods-FZVideoPlayer_Tests-dummy.m */; };
-		ACB55C8D82B5356D52380ADE90DA6FAD /* video_amplification.png in Resources */ = {isa = PBXBuildFile; fileRef = 3089852B589D4267AB120BEDB74E49E7 /* video_amplification.png */; };
+		95E2C493B4E9E8F9AE87D26753D3E043 /* video_amplification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA641A897D2CF911A2114D58C6F25CF4 /* video_amplification@2x.png */; };
+		99BDE86EDC343559F2841E409215A07D /* btn_video_stop_90x90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A7AD7CEB4E5D732EFDA8160012BC47 /* btn_video_stop_90x90@3x.png */; };
+		9FB7E13D06C56C929238BC8026D80D5E /* video_amplification.png in Resources */ = {isa = PBXBuildFile; fileRef = 8190C709A4DE781FEF6BC0CFC100185E /* video_amplification.png */; };
+		A2476299D2C5E81D5D6AEA7125936003 /* narrow_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 716CC03E8D059C4DCCC61DDF33761FA7 /* narrow_btn@3x.png */; };
+		A75D7DAB9595D3A6619F00DA50C3A9DB /* btn_play_again_icon_160x80@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B044801125C7048DAF69B8A61168C3BD /* btn_play_again_icon_160x80@3x.png */; };
+		A96BA6E3875FFB89F4E4A7718E34A2E5 /* icon_dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55994329DC4D086AEA7089BB87459874 /* icon_dot@3x.png */; };
 		B581496A65B9D9FEB31C05844A5A7A62 /* FZVideoPlayerTitleBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A1C7BA226972E73D1EC6B46F435EBF /* FZVideoPlayerTitleBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8AFB9CC7F89A2FAB9646D45CC435A4F /* 椭圆-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2D65E20288391A9F88191E6E1EE50 /* 椭圆-1.png */; };
-		C03512A143AD101F074569AA20555D96 /* btn_play_again_icon_160x80.png in Resources */ = {isa = PBXBuildFile; fileRef = F40C308E1AEE9D5EE2E5A08C8B9B2859 /* btn_play_again_icon_160x80.png */; };
-		C713F8BB0D583353DD74E20F1D221589 /* btn_video_play_90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F39B6BE29E92B3C35560ED2B0126AD /* btn_video_play_90x90@2x.png */; };
-		CB3A33F74E88184F8E2A041F320C185F /* btn_video_play_90x90test.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A7A3089408CF8BB4230F0E74BEB419 /* btn_video_play_90x90test.png */; };
-		CD6037BB59581824BFD138C39AE01003 /* btn_video_stop_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E56879EB634860DFB3614439FFC57B /* btn_video_stop_90x90.png */; };
+		C91195A1435985A5025381C03F2D4D15 /* btn_play_again_icon_160x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 465C45BB303DE66AD6949266ECA6DE90 /* btn_play_again_icon_160x80.png */; };
+		CD48922B93CB04BFC25D1652D0A213FA /* narrow_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E7ECD5B996794A9637A6DB3423126C8 /* narrow_btn.png */; };
 		D11444E1D11066476C7B12FB9F494956 /* FZVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97316AACE9E7B6B9D73788739794130E /* FZVideoManager.m */; };
 		D24AA4E2D0FBB32F26DEDAEF16F709A5 /* FZVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D399FA2B9EAD54FDC0A9989F7DE5E8 /* FZVideoPlayer.m */; };
-		D9944FA23011A0FE58BC71ED03C418F3 /* btn_video_play_90x90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7424FC8E245B6C0D333D3442990EA0C /* btn_video_play_90x90@3x.png */; };
-		DB058DE271C6FE5D06EC2FF0C2809E80 /* video_amplification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3DF469EB0DB05104C890FF9A276256 /* video_amplification@2x.png */; };
+		E130D01BEFD409EC14B5DD487BF50EDD /* btn_video_play_90x90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA784AC5240F9E20AF2B2F5DBA915120 /* btn_video_play_90x90@3x.png */; };
 		E52D1EB7FBA258C6387EC113EDEBF77F /* FZVideoVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E1D5A12FCEE9E4920E9DCD0AB1F695 /* FZVideoVolumeView.m */; };
-		E6B52E0846ADED404E82FCF34F16AB9B /* btn_video_stop_90x90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B7BB32B78D3B70898065D15066E3 /* btn_video_stop_90x90@3x.png */; };
 		E96E9F38330D6BA68084AF40F84CE5BC /* FZVideoPlayItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 699F1EB3F90DD419545DD40E3259B304 /* FZVideoPlayItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE85FD8D30E2F57642CCA3053A78A5CD /* FZVideoPlayerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE05A9D2511DDB5A3E54B37FBD5378 /* FZVideoPlayerToolBar.m */; };
+		EEBC89D3BBB584F7CECE6512735761FB /* video_amplification@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2356947287C6D6FAE3C2CCD9D8C8348D /* video_amplification@3x.png */; };
+		F1C753CFEADA0AB971A3067EA768B235 /* left_back_icon_white_60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF21CBC41FCDD25405C9D30EB08DD23 /* left_back_icon_white_60x60@2x.png */; };
 		F33FD288215266110093AF6E80709505 /* FZVideoPlayerTitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA493D287B2DBB293D9EE2CE1BFE29 /* FZVideoPlayerTitleBar.m */; };
 		F795DAF978F904F0D1F9441C9B1C21F3 /* FZVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89203A1800DE3F8F80FE395A9B7754FE /* FZVideoPlayer.bundle */; };
+		F83D2B7148434182452B63142AB5ABEF /* btn_video_stop_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C438C49226F307228F7667040A1B20 /* btn_video_stop_90x90.png */; };
+		FF0E9CF740FA356A9760023D7C0FD50A /* btn_play_again_icon_160x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 787E8B4C2AF989563C2A327D0252C253 /* btn_play_again_icon_160x80@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,51 +84,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C438C49226F307228F7667040A1B20 /* btn_video_stop_90x90.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_video_stop_90x90.png; path = FZVideoPlayer/Assets/btn_video_stop_90x90.png; sourceTree = "<group>"; };
 		00D50F97D668FFA08BBE3045A689C573 /* FZVideoPlayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayItem.m; sourceTree = "<group>"; };
-		02A7A3089408CF8BB4230F0E74BEB419 /* btn_video_play_90x90test.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_video_play_90x90test.png; path = FZVideoPlayer/Assets/btn_video_play_90x90test.png; sourceTree = "<group>"; };
-		0480ED9CAED762B60E879017FC97AC2C /* narrow_btn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "narrow_btn@2x.png"; path = "FZVideoPlayer/Assets/narrow_btn@2x.png"; sourceTree = "<group>"; };
 		0A6AE414B740F51BF578D4D9C9B5B6EF /* Pods-FZVideoPlayer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZVideoPlayer_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0FD673AB224C248D5E2DC975DAD6C587 /* 椭圆-1@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "椭圆-1@3x.png"; path = "FZVideoPlayer/Assets/椭圆-1@3x.png"; sourceTree = "<group>"; };
-		10E56879EB634860DFB3614439FFC57B /* btn_video_stop_90x90.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_video_stop_90x90.png; path = FZVideoPlayer/Assets/btn_video_stop_90x90.png; sourceTree = "<group>"; };
+		0EF21CBC41FCDD25405C9D30EB08DD23 /* left_back_icon_white_60x60@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "left_back_icon_white_60x60@2x.png"; path = "FZVideoPlayer/Assets/left_back_icon_white_60x60@2x.png"; sourceTree = "<group>"; };
+		107C32C47B1B638B8B269C61E0D569EC /* btn_video_play_90x90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_play_90x90@2x.png"; path = "FZVideoPlayer/Assets/btn_video_play_90x90@2x.png"; sourceTree = "<group>"; };
 		10FF1D36CE2452A445E4A3E3465EA1B2 /* FZVideoPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayer.h; sourceTree = "<group>"; };
 		12AC13876494B7421D75C4390F832CF6 /* Pods-FZVideoPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZVideoPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		15E6F3C479269F514A20C35EF6742A2E /* narrow_btn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "narrow_btn@3x.png"; path = "FZVideoPlayer/Assets/narrow_btn@3x.png"; sourceTree = "<group>"; };
+		2356947287C6D6FAE3C2CCD9D8C8348D /* video_amplification@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video_amplification@3x.png"; path = "FZVideoPlayer/Assets/video_amplification@3x.png"; sourceTree = "<group>"; };
 		29137D68B85BB6BC889918E92D3E2AAF /* Pods-FZVideoPlayer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZVideoPlayer_Tests-Info.plist"; sourceTree = "<group>"; };
-		2B79234079B7CA80CAAC1BF7C9EACA51 /* btn_play_again_icon_160x80@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_play_again_icon_160x80@3x.png"; path = "FZVideoPlayer/Assets/btn_play_again_icon_160x80@3x.png"; sourceTree = "<group>"; };
 		2BFE9D070C84B0A5B7384E7BA02537B0 /* FZVideoPlayControlView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayControlView.m; sourceTree = "<group>"; };
-		2CBE4640B21A4ED67C088B218D9AE20A /* left_back_icon_white_60x60.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = left_back_icon_white_60x60.png; path = FZVideoPlayer/Assets/left_back_icon_white_60x60.png; sourceTree = "<group>"; };
 		2E771D177DF14821F9F46EF08B167116 /* FZVideoPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZVideoPlayer.xcconfig; sourceTree = "<group>"; };
-		3089852B589D4267AB120BEDB74E49E7 /* video_amplification.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = video_amplification.png; path = FZVideoPlayer/Assets/video_amplification.png; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		34218B67417050F5E95F47549B74C020 /* icon_dot.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_dot.png; path = FZVideoPlayer/Assets/icon_dot.png; sourceTree = "<group>"; };
 		342ABF15F22288FF5393EB826DAAA7B6 /* Pods-FZVideoPlayer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZVideoPlayer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		34D6D9C2C7C965DAA47E3322D0C19DBE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3D28619766D095889A418DDFC4C06023 /* Pods-FZVideoPlayer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZVideoPlayer_Example-Info.plist"; sourceTree = "<group>"; };
-		4362E8D06A615671E10036B71C7395A8 /* left_back_icon_white_60x60@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "left_back_icon_white_60x60@2x.png"; path = "FZVideoPlayer/Assets/left_back_icon_white_60x60@2x.png"; sourceTree = "<group>"; };
+		3E7ECD5B996794A9637A6DB3423126C8 /* narrow_btn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = narrow_btn.png; path = FZVideoPlayer/Assets/narrow_btn.png; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		465C45BB303DE66AD6949266ECA6DE90 /* btn_play_again_icon_160x80.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_play_again_icon_160x80.png; path = FZVideoPlayer/Assets/btn_play_again_icon_160x80.png; sourceTree = "<group>"; };
+		49055BF14F17ADEB23476033148A4879 /* icon_dot@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_dot@2x.png"; path = "FZVideoPlayer/Assets/icon_dot@2x.png"; sourceTree = "<group>"; };
 		4975CDDF344EFB61E74FC5B2F8123647 /* Pods_FZVideoPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZVideoPlayer_Tests.framework; path = "Pods-FZVideoPlayer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEA493D287B2DBB293D9EE2CE1BFE29 /* FZVideoPlayerTitleBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayerTitleBar.m; sourceTree = "<group>"; };
 		4AF3450FB0B18C2B2CB04DA4E1C75A63 /* FZVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZVideoPlayer.framework; path = FZVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E752B47569DD8C252BE49F82802C6B6 /* Pods-FZVideoPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FZVideoPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		55994329DC4D086AEA7089BB87459874 /* icon_dot@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_dot@3x.png"; path = "FZVideoPlayer/Assets/icon_dot@3x.png"; sourceTree = "<group>"; };
 		586C258D646E25A286AF8DB17F1E4B44 /* Pods-FZVideoPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZVideoPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5ADE05A9D2511DDB5A3E54B37FBD5378 /* FZVideoPlayerToolBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayerToolBar.m; sourceTree = "<group>"; };
 		62FEBA96A59737EAEAF829701F6C398B /* FZVideoPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZVideoPlayer.modulemap; sourceTree = "<group>"; };
 		630BF088B5E923D58B74881A52EA0A0B /* FZVideoPlayerBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayerBundle.m; sourceTree = "<group>"; };
+		6886E96B26C5162F090D8029127F6028 /* left_back_icon_white_60x60.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = left_back_icon_white_60x60.png; path = FZVideoPlayer/Assets/left_back_icon_white_60x60.png; sourceTree = "<group>"; };
 		699F1EB3F90DD419545DD40E3259B304 /* FZVideoPlayItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayItem.h; sourceTree = "<group>"; };
 		6CC787F2C84B4D5B8FA2CB04151E7DC4 /* Pods-FZVideoPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZVideoPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6CFD7611C7810F28028151DA97635EA6 /* btn_video_stop_90x90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_stop_90x90@2x.png"; path = "FZVideoPlayer/Assets/btn_video_stop_90x90@2x.png"; sourceTree = "<group>"; };
+		716CC03E8D059C4DCCC61DDF33761FA7 /* narrow_btn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "narrow_btn@3x.png"; path = "FZVideoPlayer/Assets/narrow_btn@3x.png"; sourceTree = "<group>"; };
 		73A1C7BA226972E73D1EC6B46F435EBF /* FZVideoPlayerTitleBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayerTitleBar.h; sourceTree = "<group>"; };
 		76493FB05B89F091F7E8FAECDA739862 /* Pods-FZVideoPlayer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZVideoPlayer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		787E8B4C2AF989563C2A327D0252C253 /* btn_play_again_icon_160x80@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_play_again_icon_160x80@2x.png"; path = "FZVideoPlayer/Assets/btn_play_again_icon_160x80@2x.png"; sourceTree = "<group>"; };
 		78AFD7B065D1B5400C6B28D5457CDA03 /* Pods-FZVideoPlayer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZVideoPlayer_Tests.modulemap"; sourceTree = "<group>"; };
 		7B98CB2B62721013AAB5C3A51BFA72B3 /* Pods-FZVideoPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZVideoPlayer_Example-dummy.m"; sourceTree = "<group>"; };
 		7EF32EFD963D82DB8A96C3BD6040E56A /* FZVideoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoManager.h; sourceTree = "<group>"; };
+		8190C709A4DE781FEF6BC0CFC100185E /* video_amplification.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = video_amplification.png; path = FZVideoPlayer/Assets/video_amplification.png; sourceTree = "<group>"; };
+		87360AFE786A759C2770350C121227BF /* btn_video_play_90x90test.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_video_play_90x90test.png; path = FZVideoPlayer/Assets/btn_video_play_90x90test.png; sourceTree = "<group>"; };
 		89203A1800DE3F8F80FE395A9B7754FE /* FZVideoPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FZVideoPlayer.bundle; path = "FZVideoPlayer-FZVideoPlayer.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		898512D9272CBB6F83A44F50433396E9 /* narrow_btn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "narrow_btn@2x.png"; path = "FZVideoPlayer/Assets/narrow_btn@2x.png"; sourceTree = "<group>"; };
 		8DA61E22085F8AA3A48871D238E0A7D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		93E64A545F3F0EEEAFD748ACF6FF2E20 /* ResourceBundle-FZVideoPlayer-FZVideoPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FZVideoPlayer-FZVideoPlayer-Info.plist"; sourceTree = "<group>"; };
 		940C22B1CC590AD00892D32B0DD1B867 /* Pods-FZVideoPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZVideoPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		95F5CABADE3763C7EE50A871076D1265 /* FZVideoPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZVideoPlayer-umbrella.h"; sourceTree = "<group>"; };
 		961C01B26C6D0E674D1C2953B0EF4468 /* FZVideoLightView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoLightView.m; sourceTree = "<group>"; };
 		97316AACE9E7B6B9D73788739794130E /* FZVideoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoManager.m; sourceTree = "<group>"; };
-		9750814AF1B57891F24AF1C6E5026265 /* 椭圆-1@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "椭圆-1@2x.png"; path = "FZVideoPlayer/Assets/椭圆-1@2x.png"; sourceTree = "<group>"; };
 		9C364ABD6D9309EC558AB91A14AC3642 /* Pods-FZVideoPlayer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZVideoPlayer_Example.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBD351EF60E0EF8611C96555E106C77 /* Pods_FZVideoPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZVideoPlayer_Example.framework; path = "Pods-FZVideoPlayer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,27 +140,23 @@
 		A2337642232940F46F6B352627628580 /* FZVideoPlayerBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayerBundle.h; sourceTree = "<group>"; };
 		A83B76A66877725822BE17D98A06B993 /* Pods-FZVideoPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZVideoPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9E224C8AE761F5D0BB979FAE3A711CB /* FZVideoPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZVideoPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AAF7B7BB32B78D3B70898065D15066E3 /* btn_video_stop_90x90@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_stop_90x90@3x.png"; path = "FZVideoPlayer/Assets/btn_video_stop_90x90@3x.png"; sourceTree = "<group>"; };
-		B0309B5E916AD67F9180C76D2F4B2BB1 /* left_back_icon_white_60x60@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "left_back_icon_white_60x60@3x.png"; path = "FZVideoPlayer/Assets/left_back_icon_white_60x60@3x.png"; sourceTree = "<group>"; };
+		B044801125C7048DAF69B8A61168C3BD /* btn_play_again_icon_160x80@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_play_again_icon_160x80@3x.png"; path = "FZVideoPlayer/Assets/btn_play_again_icon_160x80@3x.png"; sourceTree = "<group>"; };
+		B9A7AD7CEB4E5D732EFDA8160012BC47 /* btn_video_stop_90x90@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_stop_90x90@3x.png"; path = "FZVideoPlayer/Assets/btn_video_stop_90x90@3x.png"; sourceTree = "<group>"; };
+		BA641A897D2CF911A2114D58C6F25CF4 /* video_amplification@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video_amplification@2x.png"; path = "FZVideoPlayer/Assets/video_amplification@2x.png"; sourceTree = "<group>"; };
 		BC120D3A0EB890A4553A88FCD3493CCB /* Pods-FZVideoPlayer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZVideoPlayer_Tests-dummy.m"; sourceTree = "<group>"; };
+		BC1B3FB49D367EECDF7C0679C4509552 /* btn_video_stop_90x90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_stop_90x90@2x.png"; path = "FZVideoPlayer/Assets/btn_video_stop_90x90@2x.png"; sourceTree = "<group>"; };
 		BC4725411C9FF89CB8F2F586CBD7BD67 /* FZVideoPlayerToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayerToolBar.h; sourceTree = "<group>"; };
 		BCCC940F3FE93608534665FB23197CA6 /* FZVideoLightView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoLightView.h; sourceTree = "<group>"; };
-		BD3DF469EB0DB05104C890FF9A276256 /* video_amplification@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video_amplification@2x.png"; path = "FZVideoPlayer/Assets/video_amplification@2x.png"; sourceTree = "<group>"; };
 		BFBDC0EB888AE8FDED19971A9D45E590 /* Pods-FZVideoPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZVideoPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
 		C0FD359A68C7ED29F5AA9C46AB77661C /* FZVideoPlayControlView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayControlView.h; sourceTree = "<group>"; };
-		C7F3EA01FF53D38F16E4D6D37049AA30 /* btn_play_again_icon_160x80@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_play_again_icon_160x80@2x.png"; path = "FZVideoPlayer/Assets/btn_play_again_icon_160x80@2x.png"; sourceTree = "<group>"; };
+		C18AD7B96484004C6DD1E2D2AFB4F25E /* left_back_icon_white_60x60@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "left_back_icon_white_60x60@3x.png"; path = "FZVideoPlayer/Assets/left_back_icon_white_60x60@3x.png"; sourceTree = "<group>"; };
 		C9FB7A36F825C5E05F865941D288C970 /* FZVideoPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZVideoPlayer-Info.plist"; sourceTree = "<group>"; };
+		CA784AC5240F9E20AF2B2F5DBA915120 /* btn_video_play_90x90@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_play_90x90@3x.png"; path = "FZVideoPlayer/Assets/btn_video_play_90x90@3x.png"; sourceTree = "<group>"; };
 		D6D399FA2B9EAD54FDC0A9989F7DE5E8 /* FZVideoPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayer.m; sourceTree = "<group>"; };
 		D9E1D5A12FCEE9E4920E9DCD0AB1F695 /* FZVideoVolumeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoVolumeView.m; sourceTree = "<group>"; };
 		E0371030904E9C95A69205C60056F5A4 /* FZVideoPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZVideoPlayer-prefix.pch"; sourceTree = "<group>"; };
-		E2C450B4C3BFC838EBE6DCD1BAF5D2DF /* narrow_btn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = narrow_btn.png; path = FZVideoPlayer/Assets/narrow_btn.png; sourceTree = "<group>"; };
-		EEE2CF484401D29BAF456BD6C1FCC943 /* video_amplification@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video_amplification@3x.png"; path = "FZVideoPlayer/Assets/video_amplification@3x.png"; sourceTree = "<group>"; };
-		EEF2D65E20288391A9F88191E6E1EE50 /* 椭圆-1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "椭圆-1.png"; path = "FZVideoPlayer/Assets/椭圆-1.png"; sourceTree = "<group>"; };
 		EF1C6B0457CB729BC84068229D12AD97 /* FZVideoPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZVideoPlayer-dummy.m"; sourceTree = "<group>"; };
 		F0154D53E7DE8DBC55BB0CD3AF9216CB /* Pods-FZVideoPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZVideoPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F40C308E1AEE9D5EE2E5A08C8B9B2859 /* btn_play_again_icon_160x80.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_play_again_icon_160x80.png; path = FZVideoPlayer/Assets/btn_play_again_icon_160x80.png; sourceTree = "<group>"; };
-		F7424FC8E245B6C0D333D3442990EA0C /* btn_video_play_90x90@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_play_90x90@3x.png"; path = "FZVideoPlayer/Assets/btn_video_play_90x90@3x.png"; sourceTree = "<group>"; };
-		F9F39B6BE29E92B3C35560ED2B0126AD /* btn_video_play_90x90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_play_90x90@2x.png"; path = "FZVideoPlayer/Assets/btn_video_play_90x90@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,34 +220,6 @@
 			path = "Target Support Files/Pods-FZVideoPlayer_Example";
 			sourceTree = "<group>";
 		};
-		642F054EAB144F175B1A1F51367270E5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F40C308E1AEE9D5EE2E5A08C8B9B2859 /* btn_play_again_icon_160x80.png */,
-				C7F3EA01FF53D38F16E4D6D37049AA30 /* btn_play_again_icon_160x80@2x.png */,
-				2B79234079B7CA80CAAC1BF7C9EACA51 /* btn_play_again_icon_160x80@3x.png */,
-				F9F39B6BE29E92B3C35560ED2B0126AD /* btn_video_play_90x90@2x.png */,
-				F7424FC8E245B6C0D333D3442990EA0C /* btn_video_play_90x90@3x.png */,
-				02A7A3089408CF8BB4230F0E74BEB419 /* btn_video_play_90x90test.png */,
-				10E56879EB634860DFB3614439FFC57B /* btn_video_stop_90x90.png */,
-				6CFD7611C7810F28028151DA97635EA6 /* btn_video_stop_90x90@2x.png */,
-				AAF7B7BB32B78D3B70898065D15066E3 /* btn_video_stop_90x90@3x.png */,
-				2CBE4640B21A4ED67C088B218D9AE20A /* left_back_icon_white_60x60.png */,
-				4362E8D06A615671E10036B71C7395A8 /* left_back_icon_white_60x60@2x.png */,
-				B0309B5E916AD67F9180C76D2F4B2BB1 /* left_back_icon_white_60x60@3x.png */,
-				E2C450B4C3BFC838EBE6DCD1BAF5D2DF /* narrow_btn.png */,
-				0480ED9CAED762B60E879017FC97AC2C /* narrow_btn@2x.png */,
-				15E6F3C479269F514A20C35EF6742A2E /* narrow_btn@3x.png */,
-				3089852B589D4267AB120BEDB74E49E7 /* video_amplification.png */,
-				BD3DF469EB0DB05104C890FF9A276256 /* video_amplification@2x.png */,
-				EEE2CF484401D29BAF456BD6C1FCC943 /* video_amplification@3x.png */,
-				EEF2D65E20288391A9F88191E6E1EE50 /* 椭圆-1.png */,
-				9750814AF1B57891F24AF1C6E5026265 /* 椭圆-1@2x.png */,
-				0FD673AB224C248D5E2DC975DAD6C587 /* 椭圆-1@3x.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		7969906EF516A7F14791FCD0105748C2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,12 +250,40 @@
 			children = (
 				AB2ABB6CC6B45D04B27F7D4FFEB2D3C9 /* Core */,
 				7969906EF516A7F14791FCD0105748C2 /* Pod */,
-				642F054EAB144F175B1A1F51367270E5 /* Resources */,
+				A1A48DFD1BF8E0E34EF56305F8EE5D1D /* Resources */,
 				8171A9BB81152AA570C42BCD934ACA48 /* Support Files */,
 				BC7FB7E246EB7706E3654DF42B688C18 /* UI */,
 			);
 			name = FZVideoPlayer;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		A1A48DFD1BF8E0E34EF56305F8EE5D1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				465C45BB303DE66AD6949266ECA6DE90 /* btn_play_again_icon_160x80.png */,
+				787E8B4C2AF989563C2A327D0252C253 /* btn_play_again_icon_160x80@2x.png */,
+				B044801125C7048DAF69B8A61168C3BD /* btn_play_again_icon_160x80@3x.png */,
+				107C32C47B1B638B8B269C61E0D569EC /* btn_video_play_90x90@2x.png */,
+				CA784AC5240F9E20AF2B2F5DBA915120 /* btn_video_play_90x90@3x.png */,
+				87360AFE786A759C2770350C121227BF /* btn_video_play_90x90test.png */,
+				00C438C49226F307228F7667040A1B20 /* btn_video_stop_90x90.png */,
+				BC1B3FB49D367EECDF7C0679C4509552 /* btn_video_stop_90x90@2x.png */,
+				B9A7AD7CEB4E5D732EFDA8160012BC47 /* btn_video_stop_90x90@3x.png */,
+				34218B67417050F5E95F47549B74C020 /* icon_dot.png */,
+				49055BF14F17ADEB23476033148A4879 /* icon_dot@2x.png */,
+				55994329DC4D086AEA7089BB87459874 /* icon_dot@3x.png */,
+				6886E96B26C5162F090D8029127F6028 /* left_back_icon_white_60x60.png */,
+				0EF21CBC41FCDD25405C9D30EB08DD23 /* left_back_icon_white_60x60@2x.png */,
+				C18AD7B96484004C6DD1E2D2AFB4F25E /* left_back_icon_white_60x60@3x.png */,
+				3E7ECD5B996794A9637A6DB3423126C8 /* narrow_btn.png */,
+				898512D9272CBB6F83A44F50433396E9 /* narrow_btn@2x.png */,
+				716CC03E8D059C4DCCC61DDF33761FA7 /* narrow_btn@3x.png */,
+				8190C709A4DE781FEF6BC0CFC100185E /* video_amplification.png */,
+				BA641A897D2CF911A2114D58C6F25CF4 /* video_amplification@2x.png */,
+				2356947287C6D6FAE3C2CCD9D8C8348D /* video_amplification@3x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		A4D91AEECD2131F78FB6B2B170EA6266 /* Targets Support Files */ = {
@@ -448,7 +448,7 @@
 			buildPhases = (
 				FAED467E7EEB943FFAC6E18B75FCAF87 /* Sources */,
 				AC0EF3462253A365816E79F899B0242D /* Frameworks */,
-				38A8DC65CFEA6FEA5FD5E9216DC06EAF /* Resources */,
+				4902B1FB9047C536DD884A77CE37E102 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -535,38 +535,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A8DC65CFEA6FEA5FD5E9216DC06EAF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C03512A143AD101F074569AA20555D96 /* btn_play_again_icon_160x80.png in Resources */,
-				2637829CE85F3DCA45B7F37845508359 /* btn_play_again_icon_160x80@2x.png in Resources */,
-				5FEC531613717E02C399A56F4CAEC2B3 /* btn_play_again_icon_160x80@3x.png in Resources */,
-				C713F8BB0D583353DD74E20F1D221589 /* btn_video_play_90x90@2x.png in Resources */,
-				D9944FA23011A0FE58BC71ED03C418F3 /* btn_video_play_90x90@3x.png in Resources */,
-				CB3A33F74E88184F8E2A041F320C185F /* btn_video_play_90x90test.png in Resources */,
-				CD6037BB59581824BFD138C39AE01003 /* btn_video_stop_90x90.png in Resources */,
-				2E0CC524CB85CB629A67178A1A798230 /* btn_video_stop_90x90@2x.png in Resources */,
-				E6B52E0846ADED404E82FCF34F16AB9B /* btn_video_stop_90x90@3x.png in Resources */,
-				6ABEC1604E9297F84A86109FABA79124 /* left_back_icon_white_60x60.png in Resources */,
-				6B4F9CC1F4C0F6F6F7FB36082E69E1A8 /* left_back_icon_white_60x60@2x.png in Resources */,
-				6AE8332BE237F8A344AA1AFEAC239382 /* left_back_icon_white_60x60@3x.png in Resources */,
-				89F8EC7E9CCBCF70BDAEC96E3FA7FBCC /* narrow_btn.png in Resources */,
-				69021A240EACB7F6026A442B1BC98860 /* narrow_btn@2x.png in Resources */,
-				2F329A572EDE44071FF420046AAC1F58 /* narrow_btn@3x.png in Resources */,
-				ACB55C8D82B5356D52380ADE90DA6FAD /* video_amplification.png in Resources */,
-				DB058DE271C6FE5D06EC2FF0C2809E80 /* video_amplification@2x.png in Resources */,
-				6A5D70853FEC110975FAA54793F68CEF /* video_amplification@3x.png in Resources */,
-				B8AFB9CC7F89A2FAB9646D45CC435A4F /* 椭圆-1.png in Resources */,
-				53C19D7D486FE631FC8213F468B46B14 /* 椭圆-1@2x.png in Resources */,
-				204FF30660316526C8A9F42EE9353001 /* 椭圆-1@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4474A5E08EE2D1E4F9DB4EAC90220431 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4902B1FB9047C536DD884A77CE37E102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91195A1435985A5025381C03F2D4D15 /* btn_play_again_icon_160x80.png in Resources */,
+				FF0E9CF740FA356A9760023D7C0FD50A /* btn_play_again_icon_160x80@2x.png in Resources */,
+				A75D7DAB9595D3A6619F00DA50C3A9DB /* btn_play_again_icon_160x80@3x.png in Resources */,
+				05619681A5AD4C5E31E036573BBFB9C4 /* btn_video_play_90x90@2x.png in Resources */,
+				E130D01BEFD409EC14B5DD487BF50EDD /* btn_video_play_90x90@3x.png in Resources */,
+				803D2BDA20122BC1943EC198F4001F0F /* btn_video_play_90x90test.png in Resources */,
+				F83D2B7148434182452B63142AB5ABEF /* btn_video_stop_90x90.png in Resources */,
+				0B6D1AEC730B43676312D3C047AAE94D /* btn_video_stop_90x90@2x.png in Resources */,
+				99BDE86EDC343559F2841E409215A07D /* btn_video_stop_90x90@3x.png in Resources */,
+				54BA8223E17757EEF908FAFFD54FBA11 /* icon_dot.png in Resources */,
+				42E40625003C7A45E67BAE47A98AE2AC /* icon_dot@2x.png in Resources */,
+				A96BA6E3875FFB89F4E4A7718E34A2E5 /* icon_dot@3x.png in Resources */,
+				687F307AF62659FFD9780FE55162EB30 /* left_back_icon_white_60x60.png in Resources */,
+				F1C753CFEADA0AB971A3067EA768B235 /* left_back_icon_white_60x60@2x.png in Resources */,
+				7A92DBBB21FC632C64E7328186E4BB38 /* left_back_icon_white_60x60@3x.png in Resources */,
+				CD48922B93CB04BFC25D1652D0A213FA /* narrow_btn.png in Resources */,
+				7286414867D5776E3EA918B4903E4153 /* narrow_btn@2x.png in Resources */,
+				A2476299D2C5E81D5D6AEA7125936003 /* narrow_btn@3x.png in Resources */,
+				9FB7E13D06C56C929238BC8026D80D5E /* video_amplification.png in Resources */,
+				95E2C493B4E9E8F9AE87D26753D3E043 /* video_amplification@2x.png in Resources */,
+				EEBC89D3BBB584F7CECE6512735761FB /* video_amplification@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

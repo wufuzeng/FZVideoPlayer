@@ -178,7 +178,7 @@
 #pragma mark -- Action Func ----
 
 -(void)backButtonAction:(UIButton*)sender {
-    if (self.playerStyle == VideoPlayerStyleFullScreenLeft) {
+    if (self.playerStyle == VideoPlayerStyleFullScreen) {
         if (self.showTitleBar) {
             self.layoutTitleBarTop.constant = 0;
         }else{
@@ -214,7 +214,7 @@
 }
 
 - (void)fullScreenButtonAction:(UIButton *)sender {
-    if (self.playerStyle == VideoPlayerStyleFullScreenLeft) {
+    if (self.playerStyle == VideoPlayerStyleFullScreen) {
         if (self.showTitleBar) {
             self.layoutTitleBarTop.constant = 0;
         }else{
@@ -223,7 +223,7 @@
         self.playerStyle = VideoPlayerStyleNormal;
     } else {
         self.layoutTitleBarTop.constant = 0;
-        self.playerStyle = VideoPlayerStyleFullScreenLeft;
+        self.playerStyle = VideoPlayerStyleFullScreen;
     }
 }
 
@@ -335,8 +335,7 @@
             [self.delegate control:self playerStyleChanged:playerStyle ];
         }
     }
-    if (_playerStyle == VideoPlayerStyleFullScreenLeft ||
-        _playerStyle == VideoPlayerStyleFullScreenRight) {
+    if (_playerStyle == VideoPlayerStyleFullScreen) {
         self.toolBar.fullScreenButton.selected = NO;
         self.titleBar.backButton.alpha = 1;
         self.layoutTitleBarTop.constant = 0;

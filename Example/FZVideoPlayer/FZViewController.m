@@ -11,6 +11,9 @@
 #import <FZVideoPlayer/FZVideoPlayer.h>
 @interface FZViewController ()
 @property (nonatomic,strong) FZVideoPlayer *player;
+
+@property (nonatomic,strong) UIScrollView *scrollView;
+
 @end
 
 @implementation FZViewController
@@ -18,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self scrollView];
     //    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"loginvideo" ofType:@"mp4"]];
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Test" ofType:@"mov"]];
     self.player.title = @"屌丝男士";
@@ -43,10 +47,24 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.player stop];
+    [self.player pause];
     
     
 }
+
+-(UIScrollView *)scrollView{
+    if (_scrollView == nil) {
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,
+                                                                      0,
+                                                                      [UIScreen mainScreen].bounds.size.width,
+                                                                     [UIScreen mainScreen].bounds.size.height)];
+        [self.view addSubview:_scrollView];
+        _scrollView.backgroundColor = [UIColor orangeColor];
+        _scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    }
+    return _scrollView;
+}
+
 
 -(FZVideoPlayer *)player{
     if (_player == nil) {
@@ -58,7 +76,7 @@
         self.player.disableFullScreen = NO;
         self.player.disableAdjustBrightnessOrVolume = YES;
         self.player.videoGravity = AVLayerVideoGravityResizeAspect;
-        self.player.showInView = self.view;
+        self.player.showInView = self.scrollView;
     }
     return _player;
 }
