@@ -27,12 +27,6 @@
 - [x]  4.  支持音量调节。
 - [x]  5.  支持进度调节。
 
-# 0.0.9优化
-- 1.处理调节亮度、音量时控制层消失。
-- 2.优化亮度、音量调剂比例。
-- 3.优化首次播放不显示控制层。
-- 4.处理播放视频没有声音。
-- 5.修复横竖屏切换BUG。
 
 [![CI Status](https://img.shields.io/travis/wufuzeng/FZVideoPlayer.svg?style=flat)](https://travis-ci.org/wufuzeng/FZVideoPlayer)
 [![Version](https://img.shields.io/cocoapods/v/FZVideoPlayer.svg?style=flat)](https://cocoapods.org/pods/FZVideoPlayer)
